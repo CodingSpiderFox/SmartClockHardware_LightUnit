@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>E:/WUL/Wakeuplight.sch</source>
+    <source>E:/WUL/ControlUnit/ControlUnitInput.sch</source>
     <date>11/26/2017 10:50:28 PM</date>
     <tool>Eeschema 4.0.7</tool>
     <sheet number="1" name="/" tstamps="/">
@@ -10,7 +10,7 @@
         <company/>
         <rev/>
         <date/>
-        <source>Wakeuplight.sch</source>
+        <source>ControlUnitInput.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>

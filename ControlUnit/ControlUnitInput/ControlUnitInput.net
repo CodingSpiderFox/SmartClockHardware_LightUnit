@@ -1,6 +1,6 @@
 (export (version D)
   (design
-    (source C:/Users/sunri/Downloads/Wakeuplight-20171217T162033Z-001/Wakeuplight/Wakeuplight.sch)
+    (source C:/Users/sunri/Downloads/Wakeuplight-20171217T162033Z-001/Wakeuplight/.sch)
     (date "17-Dec-17 5:28:29 PM")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
@@ -9,7 +9,7 @@
         (company)
         (rev)
         (date)
-        (source Wakeuplight.sch)
+        (source ControlUnitInput.sch)
         (comment (number 1) (value ""))
         (comment (number 2) (value ""))
         (comment (number 3) (value ""))

@@ -34,7 +34,7 @@ LIBS:valves
 LIBS:IRLZ34
 LIBS:ws2812b
 LIBS:ESP8266
-LIBS:Wakeuplight-cache
+LIBS:ControlUnitInput-cache
 EELAYER 25 0
 EELAYER END
 $Descr User 23622 31496
