@@ -1,4 +1,4 @@
-update=So 19 Nov 2017 19:06:44 CET
+update=23-Dec-17 6:18:33 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../Wakeuplight;kicad-IRLZ34;kicad-ws2812b/WS2812B.pretty;kicad-ESP8266
+LibDir=../../sharedLibs;../ControlUnitInput
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -62,5 +62,3 @@ LibName30=atmel
 LibName31=contrib
 LibName32=valves
 LibName33=kicad-IRLZ34/IRLZ34
-LibName34=kicad-ws2812b/WS2812B.pretty/Schematic-Symbol/ws2812b
-LibName35=kicad-ESP8266/ESP8266
