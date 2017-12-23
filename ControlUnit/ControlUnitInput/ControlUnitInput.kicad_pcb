@@ -5,7 +5,7 @@
     (no_connects 0)
     (area 10.289181 12.624999 112.851001 102.775001)
     (thickness 1.6)
-    (drawings 4)
+    (drawings 5)
     (tracks 240)
     (zones 0)
     (modules 41)
@@ -2239,6 +2239,9 @@
     )
   )
 
+  (gr_text "Board design by Keroth & CodingSpiderFox\nLicense: CERN OHL v1.2" (at 109.601 46.863 90) (layer F.Fab)
+    (effects (font (size 1.016 1.016) (thickness 0.254)))
+  )
   (gr_line (start 112.776 12.7) (end 112.776 102.7) (angle 90) (layer Edge.Cuts) (width 0.15) (tstamp 5A36ACBC))
   (gr_line (start 12.7 12.7) (end 112.7 12.7) (angle 90) (layer Edge.Cuts) (width 0.15) (tstamp 5A36ACB5))
   (gr_line (start 12.7 102.616) (end 112.7 102.616) (angle 90) (layer Edge.Cuts) (width 0.15))
