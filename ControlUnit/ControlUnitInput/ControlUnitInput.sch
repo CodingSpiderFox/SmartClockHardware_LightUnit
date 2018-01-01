@@ -32,8 +32,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:IRLZ34
-LIBS:ws2812b
-LIBS:ESP8266
 LIBS:ControlUnitInput-cache
 EELAYER 25 0
 EELAYER END
@@ -566,14 +564,14 @@ Text GLabel 2500 850  2    39   Input ~ 0
 SDA
 Text GLabel 2500 950  2    39   Input ~ 0
 SCL
-Text GLabel 2500 1050 2    39   Input ~ 0
+Text GLabel 2500 1450 2    39   Input ~ 0
 INT
 Text GLabel 2500 750  2    39   Input ~ 0
 D0
 Text GLabel 2500 1150 2    39   Input ~ 0
 D4
-Text GLabel 2500 1450 2    39   Input ~ 0
-D5
+Text GLabel 2500 1050 2    39   Input ~ 0
+D3
 Text GLabel 2500 1550 2    39   Input ~ 0
 D6
 Text GLabel 2500 1650 2    39   Input ~ 0
@@ -657,111 +655,100 @@ F 3 "" H 900 2050 50  0001 C CNN
 	1    900  2050
 	0    1    1    0   
 $EndComp
-$Comp
-L Conn_02x15_Odd_Even J1
-U 1 1 5A34A10D
-P 3450 1450
-F 0 "J1" H 3500 2250 50  0000 C CNN
-F 1 "Conn_02x15_Odd_Even" H 3500 650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x15_Pitch2.54mm" H 3450 1450 50  0001 C CNN
-F 3 "" H 3450 1450 50  0001 C CNN
-	1    3450 1450
-	1    0    0    -1  
-$EndComp
-Text GLabel 3750 750  2    39   Input ~ 0
+Text GLabel 5450 700  2    39   Input ~ 0
 D0
-Text GLabel 3750 850  2    39   Input ~ 0
+Text GLabel 5450 800  2    39   Input ~ 0
 SDA
-Text GLabel 3750 950  2    39   Input ~ 0
+Text GLabel 5450 900  2    39   Input ~ 0
 SCL
-Text GLabel 3750 1050 2    39   Input ~ 0
+Text GLabel 5450 1400 2    39   Input ~ 0
 INT
-Text GLabel 3750 1150 2    39   Input ~ 0
+Text GLabel 5450 1100 2    39   Input ~ 0
 D4
 $Comp
 L GND #PWR06
 U 1 1 5A34A4EF
-P 3750 1350
-F 0 "#PWR06" H 3750 1100 31  0001 C CNN
-F 1 "GND" H 3750 1250 31  0000 C CNN
-F 2 "" H 3750 1350 50  0001 C CNN
-F 3 "" H 3750 1350 50  0001 C CNN
-	1    3750 1350
+P 5450 1300
+F 0 "#PWR06" H 5450 1050 31  0001 C CNN
+F 1 "GND" H 5450 1200 31  0000 C CNN
+F 2 "" H 5450 1300 50  0001 C CNN
+F 3 "" H 5450 1300 50  0001 C CNN
+	1    5450 1300
 	0    -1   -1   0   
 $EndComp
-Text GLabel 3750 1450 2    39   Input ~ 0
-D5
-Text GLabel 3750 1550 2    39   Input ~ 0
+Text GLabel 5450 1000 2    39   Input ~ 0
+D3
+Text GLabel 5450 1500 2    39   Input ~ 0
 D6
-Text GLabel 3750 1650 2    39   Input ~ 0
+Text GLabel 5450 1600 2    39   Input ~ 0
 D7
-Text GLabel 3750 1750 2    39   Input ~ 0
+Text GLabel 5450 1700 2    39   Input ~ 0
 D8
-Text GLabel 3750 1850 2    39   Input ~ 0
+Text GLabel 5450 1800 2    39   Input ~ 0
 RX
-Text GLabel 3750 1950 2    39   Input ~ 0
+Text GLabel 5450 1900 2    39   Input ~ 0
 TX
 $Comp
 L GND #PWR07
 U 1 1 5A34A84E
-P 3750 2050
-F 0 "#PWR07" H 3750 1800 31  0001 C CNN
-F 1 "GND" H 3750 1950 31  0000 C CNN
-F 2 "" H 3750 2050 50  0001 C CNN
-F 3 "" H 3750 2050 50  0001 C CNN
-	1    3750 2050
+P 5450 2000
+F 0 "#PWR07" H 5450 1750 31  0001 C CNN
+F 1 "GND" H 5450 1900 31  0000 C CNN
+F 2 "" H 5450 2000 50  0001 C CNN
+F 3 "" H 5450 2000 50  0001 C CNN
+	1    5450 2000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L +5V #PWR08
 U 1 1 5A34A8F9
-P 3250 2150
-F 0 "#PWR08" H 3250 2000 50  0001 C CNN
-F 1 "+5V" H 3250 2290 50  0000 C CNN
-F 2 "" H 3250 2150 50  0001 C CNN
-F 3 "" H 3250 2150 50  0001 C CNN
-	1    3250 2150
+P 4600 2100
+F 0 "#PWR08" H 4600 1950 50  0001 C CNN
+F 1 "+5V" H 4600 2240 50  0000 C CNN
+F 2 "" H 4600 2100 50  0001 C CNN
+F 3 "" H 4600 2100 50  0001 C CNN
+	1    4600 2100
 	-1   0    0    1   
 $EndComp
 $Comp
 L GND #PWR09
 U 1 1 5A34A97C
-P 3250 2050
-F 0 "#PWR09" H 3250 1800 31  0001 C CNN
-F 1 "GND" H 3250 1950 31  0000 C CNN
-F 2 "" H 3250 2050 50  0001 C CNN
-F 3 "" H 3250 2050 50  0001 C CNN
-	1    3250 2050
+P 4600 2000
+F 0 "#PWR09" H 4600 1750 31  0001 C CNN
+F 1 "GND" H 4600 1900 31  0000 C CNN
+F 2 "" H 4600 2000 50  0001 C CNN
+F 3 "" H 4600 2000 50  0001 C CNN
+	1    4600 2000
 	0    1    1    0   
 $EndComp
-Text GLabel 3250 1950 0    39   Input ~ 0
+Text GLabel 4600 1900 0    39   Input ~ 0
 RST
-Text GLabel 3250 1850 0    39   Input ~ 0
+Text GLabel 4600 1800 0    39   Input ~ 0
 EN
 $Comp
 L GND #PWR010
 U 1 1 5A34AAF3
-P 3250 1650
-F 0 "#PWR010" H 3250 1400 31  0001 C CNN
-F 1 "GND" H 3250 1550 31  0000 C CNN
-F 2 "" H 3250 1650 50  0001 C CNN
-F 3 "" H 3250 1650 50  0001 C CNN
-	1    3250 1650
+P 4600 1600
+F 0 "#PWR010" H 4600 1350 31  0001 C CNN
+F 1 "GND" H 4600 1500 31  0000 C CNN
+F 2 "" H 4600 1600 50  0001 C CNN
+F 3 "" H 4600 1600 50  0001 C CNN
+	1    4600 1600
 	0    1    1    0   
 $EndComp
-Text GLabel 3250 1550 0    39   Input ~ 0
+Text GLabel 4600 1500 0    39   Input ~ 0
 CLK
-Text GLabel 3250 1450 0    39   Input ~ 0
+Text GLabel 4600 1400 0    39   Input ~ 0
 MISO
-Text GLabel 3250 1350 0    39   Input ~ 0
+Text GLabel 4600 1300 0    39   Input ~ 0
 CMD
-Text GLabel 3250 1250 0    39   Input ~ 0
+Text GLabel 4600 1200 0    39   Input ~ 0
 MOSI
-Text GLabel 3250 1150 0    39   Input ~ 0
+Text GLabel 4600 1100 0    39   Input ~ 0
 SD2
-Text GLabel 3250 1050 0    39   Input ~ 0
+Text GLabel 4600 1000 0    39   Input ~ 0
 SD3
-Text GLabel 3250 750  0    39   Input ~ 0
+Text GLabel 4600 700  0    39   Input ~ 0
 A0
 $Comp
 L GND #PWR011
@@ -804,12 +791,12 @@ $EndComp
 $Comp
 L +3.3V #PWR014
 U 1 1 5A34BDD2
-P 3750 2150
-F 0 "#PWR014" H 3750 2000 31  0001 C CNN
-F 1 "+3.3V" H 3750 2290 31  0000 C CNN
-F 2 "" H 3750 2150 50  0001 C CNN
-F 3 "" H 3750 2150 50  0001 C CNN
-	1    3750 2150
+P 5450 2100
+F 0 "#PWR014" H 5450 1950 31  0001 C CNN
+F 1 "+3.3V" H 5450 2240 31  0000 C CNN
+F 2 "" H 5450 2100 50  0001 C CNN
+F 3 "" H 5450 2100 50  0001 C CNN
+	1    5450 2100
 	0    1    1    0   
 $EndComp
 $Comp
@@ -978,27 +965,25 @@ $EndComp
 $Comp
 L +3.3V #PWR025
 U 1 1 5A3532E4
-P 3250 1750
-F 0 "#PWR025" H 3250 1600 31  0001 C CNN
-F 1 "+3.3V" H 3250 1890 31  0000 C CNN
-F 2 "" H 3250 1750 50  0001 C CNN
-F 3 "" H 3250 1750 50  0001 C CNN
-	1    3250 1750
+P 4600 1700
+F 0 "#PWR025" H 4600 1550 31  0001 C CNN
+F 1 "+3.3V" H 4600 1840 31  0000 C CNN
+F 2 "" H 4600 1700 50  0001 C CNN
+F 3 "" H 4600 1700 50  0001 C CNN
+	1    4600 1700
 	0    -1   -1   0   
 $EndComp
 $Comp
 L +3.3V #PWR026
 U 1 1 5A353367
-P 3750 1250
-F 0 "#PWR026" H 3750 1100 31  0001 C CNN
-F 1 "+3.3V" H 3750 1390 31  0000 C CNN
-F 2 "" H 3750 1250 50  0001 C CNN
-F 3 "" H 3750 1250 50  0001 C CNN
-	1    3750 1250
+P 5450 1200
+F 0 "#PWR026" H 5450 1050 31  0001 C CNN
+F 1 "+3.3V" H 5450 1340 31  0000 C CNN
+F 2 "" H 5450 1200 50  0001 C CNN
+F 3 "" H 5450 1200 50  0001 C CNN
+	1    5450 1200
 	0    1    1    0   
 $EndComp
-NoConn ~ 3250 850 
-NoConn ~ 3250 950 
 NoConn ~ 900  850 
 NoConn ~ 900  950 
 $Comp
@@ -1033,5 +1018,62 @@ F 2 "" H 1300 2900 50  0001 C CNN
 F 3 "" H 1300 2900 50  0001 C CNN
 	1    1300 2900
 	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x15 J3
+U 1 1 5A4ABF15
+P 4800 1400
+F 0 "J3" H 4800 2200 50  0000 C CNN
+F 1 "Conn_01x15" H 4800 600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x15_Pitch2.54mm" H 4800 1400 50  0001 C CNN
+F 3 "" H 4800 1400 50  0001 C CNN
+	1    4800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x15 J4
+U 1 1 5A4ABFE6
+P 5250 1400
+F 0 "J4" H 5250 2200 50  0000 C CNN
+F 1 "Conn_01x15" H 5250 600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x15_Pitch2.54mm" H 5250 1400 50  0001 C CNN
+F 3 "" H 5250 1400 50  0001 C CNN
+	1    5250 1400
+	-1   0    0    1   
+$EndComp
+NoConn ~ 4600 800 
+NoConn ~ 4600 900 
+$Comp
+L Conn_01x02 J1
+U 1 1 5A4AC288
+P 2200 2850
+F 0 "J1" H 2200 2950 50  0000 C CNN
+F 1 "Conn_01x02" H 2200 2650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2200 2850 50  0001 C CNN
+F 3 "" H 2200 2850 50  0001 C CNN
+	1    2200 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR029
+U 1 1 5A4AC373
+P 2000 2850
+F 0 "#PWR029" H 2000 2700 31  0001 C CNN
+F 1 "+3.3V" H 2000 2990 31  0000 C CNN
+F 2 "" H 2000 2850 50  0001 C CNN
+F 3 "" H 2000 2850 50  0001 C CNN
+	1    2000 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR030
+U 1 1 5A4AC3FF
+P 2000 2950
+F 0 "#PWR030" H 2000 2700 31  0001 C CNN
+F 1 "GND" H 2000 2850 31  0000 C CNN
+F 2 "" H 2000 2950 50  0001 C CNN
+F 3 "" H 2000 2950 50  0001 C CNN
+	1    2000 2950
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
